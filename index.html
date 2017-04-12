@@ -2,28 +2,34 @@
 <html>
 <head>
   <title>CS Survival Guide</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <body>
-  <nav>
-    <div>
-      <div>
-        <a href="#">CS Survival Guide</a>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#target"><span class = "icon-bar"></span> <span class = "icon-bar"></span> <span class = "icon-bar"></span></button>
+        <a class="navbar-brand" href="#">CS Survival Guide</a>
       </div>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Favorite Classes</a></li>
-        <li><a href="#">Top Languages</a></li>
-      </ul>
-      <ul>
-        <li><a href="#">Sign Up</a></li>
-        <li><a href="#">Login</a></li>
-      </ul>
+      <div class="collapse navbar-collapse" id="target">
+        <ul class="nav navbar-nav">
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="#">Favorite Classes</a></li>
+          <li><a href="#">Top Languages</a></li>
+        </ul>
+        <ul class="nav navbar-nav">
+          <li><a class="navbar-right" href="#">Sign Up</a></li>
+          <li><a class="navbar-right" href="#">Login</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
 
-  <div class="page_header">
-    <div>
+  <div class="container-fluid">
+    <div class="jumbotron">
       <h1>Dartmouth CS Survival Guide</h1>
       <p>Welcome to the homepage of the Dartmouth CS Survival Guide – your home
         for helpful tips, tricks, and stories to help you get through your time
@@ -31,13 +37,13 @@
       </div>
     </div>
 
-    <div class="grid_layout">
+    <div class="container_fluid">
       <h2>Top 6 Common CS Mistakes to Avoid</h2>
       <div>
-        <div>
-          <h3>#1: Segmentation Faults (Core Dumped)</h3>
-        </div>
-        <div>
+          <div class="row">
+            <h3>#1: Segmentation Faults (Core Dumped)</h3>
+          </div>
+        <div class = "col-md-6">
           <p>
             As anyone who has programmed in C knows, working with a language
             that is not memory safe can be a blessing and a curse.  One
@@ -49,10 +55,10 @@
         </div>
       </div>
       <div>
-        <div>
+        <div class="row">
           <h3>#2: Procrastination</h3>
         </div>
-        <div>
+        <div class = "col-md-6">
           <p>
             The only possible thing that makes a CS lab harder is when its
             due at midnight and it’s 10pm.  Being a CS major and procrastinating
@@ -63,10 +69,10 @@
         </div>
       </div>
       <div>
-        <div>
+        <div class="row">
           <h3>#3: Not Using Git</h3>
         </div>
-        <div>
+        <div class = "col-md-6">
           <p>
             As a student, especially if no one else is working on your code,
             using Git can seem tedious and unneccessary.  Why learn this complicated
@@ -78,10 +84,10 @@
         </div>
       </div>
       <div>
-        <div>
+        <div class="row">
           <h3>#4: Getting Cooked</h3>
         </div>
-        <div>
+        <div class = "col-md-6">
           <p>
             Ever tried taking two systems level programming courses in the same
             term?  Or how about saving an entire CS50 lab until the last minute?
@@ -94,10 +100,10 @@
         </div>
       </div>
       <div>
-        <div>
+        <div class="row">
           <h3>#5: Forgetting How to Code</h3>
         </div>
-        <div>
+        <div class = "col-md-6">
           <p>
             What's that you say?  How could a programmer possibly forget how to
             code?  Well you're right, they probably couldn't.  The problem is
@@ -116,5 +122,9 @@
         <li><a href="#">Professors</a></li>
       </ul>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   </body>
   </html>
